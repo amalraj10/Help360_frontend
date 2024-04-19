@@ -1,41 +1,148 @@
-#app {
-    height: 100%;
+/* styles.css */
+.heading-container {
+  text-align: center;
+  padding: 0 15px;
+}
+
+.heading {
+  font-size: 100px;
+  font-weight: 800;
+  font-family: "Marcellus SC", serif;
+}
+
+.sub-heading {
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 45px; /* Adjust font size for smaller screens */
   }
-  html,
-  body {
-    position: relative;
-    height: 100%;
+}
+@media (max-width: 768px) {
+  .sub-heading {
+    font-size: 15px; /* Adjust font size for smaller screens */
   }
-  
-  body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
+}
+
+@media (max-width: 768px) {
+  .rest {
+    font-size: 15px; /* Adjust font size for smaller screens */
   }
-  
-  .swiper {
-    width: 100%;
-    height: 100%;
+}
+@media (max-width: 768px) {
+  .tour {
+    font-size: 10px; /* Adjust font size for smaller screens */
   }
-  
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-  
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+
+
+.panchayat-media-container {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.section-heading {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.message-container {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+
+.message {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message p {
+  margin: 0;
+}
+
+
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.message-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  margin-right: 10px;
+  resize: none;
+}
+
+.image-input {
+  display: none;
+}
+
+.send-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: #0056b3;
+}
+
+
+.img2{
+
+  animation: rotation 4s infinite linear;
+
+
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
   }
-  
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  to {
+    transform: rotate(360deg);
   }
-  
+}
+
+
+
+/* annoucement section */
+.announcement-section {
+  background-color: #f0f0f0; /* Set background color for the announcement section */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.announcement-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.message {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.message:last-child {
+  margin-bottom: 0;
+}
